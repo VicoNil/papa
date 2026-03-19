@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una sorpresa para Papá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card" id="card">
+        <div id="setup">
+            <h2>Tengo algo para ti...</h2>
+            <button class="btn-open" onclick="lanzarSorpresa()">Clica aquí</button>
+        </div>
+
+        <div id="content" class="hidden">
+            <h1 class="title">¡Feliz Día del Padre!</h1>
+            <div class="photo-frame">
+                <img src="imagen1.jpg" alt="Para el mejor padre">
+            </div>
+            <p class="message">Gracias por estar siempre ahí.</p>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
